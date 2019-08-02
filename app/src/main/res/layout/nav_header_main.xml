@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/burger"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/transparentBg">
+       <com.mikhaellopez.circularimageview.CircularImageView
+           android:id="@+id/userprofil"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="@dimen/space20"
+           app:srcCompat="@drawable/girl" />
+
+       <TextView
+           android:id="@+id/usernamesidebar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_marginRight="13dp"
+           android:fontFamily="@font/ubuntufont"
+           android:layout_marginTop="75dp"
+           android:gravity="center_horizontal"
+           android:paddingTop="@dimen/nav_header_vertical_spacing"
+           android:text="Android Studio"
+           android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+           android:textColor="#fff"
+           android:textStyle="bold" />
+
+       <TextView
+           android:id="@+id/phoneSidebar"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/usernamesidebar"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_marginTop="10dp"
+           android:layout_marginRight="10dp"
+           android:gravity="center_horizontal"
+           android:text="+22892363533"
+           android:textColor="#fff" />
+   </RelativeLayout>
+
+
+
+</RelativeLayout>

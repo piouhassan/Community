@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.CategoryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_5"
+        >
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/viewpager"
+            android:layout_marginTop="0dp"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="Liste des Categories"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space10"
+                    android:src="@drawable/cart" />
+                />
+
+                <RelativeLayout
+                    android:id="@+id/badge"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/space5"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/round_red">
+
+                    <TextView
+                        android:id="@+id/cart_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/space10" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <android.support.v4.view.ViewPager
+           android:foregroundGravity="center"
+           android:overScrollMode="never"
+           android:clipToPadding="false"
+           android:id="@+id/viewpager"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pollen.community.Activity.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    style="@style/parent.contentLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:paddingBottom="10dp"
+        android:elevation="999dp"
+        android:gravity="bottom"
+        android:background="#fff"
+        android:paddingLeft="10dp"
+        android:id="@+id/header"
+        android:paddingRight="10dp"
+       >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image_acc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user"
+            android:layout_centerVertical="true"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView
+            style="@style/viewParent.headerText"
+            android:layout_marginLeft="15dp"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/ubuntufont"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/show_dialog"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space10"
+            android:background="@drawable/cart"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white" />
+        <RelativeLayout
+            android:id="@+id/badge"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_red"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="@dimen/space5"
+            >
+            <TextView
+                android:id="@+id/cart_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/space10"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?attr/actionBarSize"
+        tools:ignore="MissingConstraints">
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

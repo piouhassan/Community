@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/search_bg"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparentBg"
+        android:padding="8dp"
+        >
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:id="@+id/searchBar"
+            android:layout_alignParentTop="true"
+            app:mt_speechMode="false"
+            app:mt_hint="Saisir le nom de votre plat"
+            >
+        </com.mancj.materialsearchbar.MaterialSearchBar>
+
+           <android.support.v7.widget.RecyclerView
+               android:layout_below="@id/searchBar"
+               android:layout_width="match_parent"
+               android:scrollbars="vertical"
+               android:id="@+id/recycler_search"
+               android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+
+</LinearLayout>

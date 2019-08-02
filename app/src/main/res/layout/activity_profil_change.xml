@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfilChangeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/backgr"
+        android:elevation="@dimen/space10"
+        android:id="@+id/toptop"
+        >
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/transparentBg"
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15sp"
+           android:id="@+id/toolb"
+           android:orientation="horizontal">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+
+               <FrameLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+
+
+                   <ImageView
+                       android:layout_width="18dp"
+                       android:layout_height="18dp"
+                       android:layout_marginLeft="20dp"
+                       android:id="@+id/back_return"
+                       android:src="@drawable/ic_left_arrow_white"/>
+
+
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:textColor="#fff"
+                       android:textSize="16sp"
+                       android:text="Detail Profil"
+                       android:layout_gravity="center"
+                       android:fontFamily="@font/ubuntufont"
+                       android:gravity="center"/>
+
+               </FrameLayout>
+
+
+
+
+           </LinearLayout>
+
+
+       </LinearLayout>
+       <FrameLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_below="@id/toolb"
+           android:layout_centerHorizontal="true"
+           android:layout_gravity="center">
+
+           <!--radar effect library can be used-->
+
+           <pl.bclogic.pulsator4droid.library.PulsatorLayout
+               android:id="@+id/pulsator"
+               android:layout_width="190dp"
+               android:layout_height="190dp"
+               app:pulse_count="4"
+               app:pulse_duration="4000"
+               app:pulse_repeat="0"
+               app:pulse_color="#bbbcc0"
+               app:pulse_startFromScratch="true"
+               app:pulse_interpolator="Decelerate">
+           </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+
+
+           <de.hdodenhof.circleimageview.CircleImageView
+               xmlns:app="http://schemas.android.com/apk/res-auto"
+               android:id="@+id/profile_image"
+               android:layout_width="150dp"
+               android:layout_height="150dp"
+               android:layout_gravity="center"
+               android:src="@drawable/girl" />
+
+       </FrameLayout>
+   </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toptop"
+        >
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mes Informations"
+        android:layout_marginTop="@dimen/space10"
+        android:id="@+id/identif"
+        android:layout_marginLeft="20dp"
+        android:textSize="15dp"
+        android:fontFamily="@font/ubuntufont"
+        android:textColor="#2196F3"
+        />
+
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="4px"
+        android:layout_centerVertical="true"
+        android:background="#2196F3"
+        android:layout_below="@id/identif"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="@dimen/space10"
+        android:id="@+id/view1"
+        />
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/view1"
+       android:id="@+id/user1"
+       >
+       <ImageView android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:src="@drawable/perm"
+           android:layout_marginTop="7dp"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Identifiants : "
+           android:layout_marginTop="@dimen/space10"
+           android:id="@+id/identifianttext"
+           android:layout_marginLeft="30dp"
+           android:textStyle="bold"
+           android:textSize="14sp"
+           android:fontFamily="@font/ubuntufont"
+           />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Stephane "
+           android:layout_marginTop="@dimen/space10"
+           android:id="@+id/username"
+           android:layout_marginLeft="20dp"
+           android:layout_toRightOf="@id/identifianttext"
+           android:gravity="right"
+           android:textSize="14sp"
+           android:layout_marginRight="@dimen/space20"
+           android:fontFamily="@font/ubuntufont"
+
+           />
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user1"
+        android:layout_marginTop="5dp"
+        android:id="@+id/user2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ceci est votre identifiant. vous pouvez completer vos information en cliquant sur le bouton ci dessous"
+            android:layout_marginTop="5dp"
+            android:id="@+id/nom"
+            android:layout_marginLeft="@dimen/space20"
+            android:layout_marginRight="40dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/nunito_sans_reguler"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mon Adresse"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:id="@+id/addre"
+        android:textSize="15dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#2196F3"
+        android:fontFamily="@font/ubuntufont"
+        android:layout_below="@id/user2"
+        />
+    <View
+        android:layout_width="50dp"
+        android:layout_height="4px"
+        android:layout_centerVertical="true"
+        android:background="#2196F3"
+        android:layout_below="@+id/addre"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="10dp"
+        android:id="@+id/view2"
+        />
+    <ImageView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/ic_location"
+        android:layout_marginTop="23dp"
+        android:layout_below="@id/view2"
+        android:id="@+id/addressTag"
+        />
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:layout_toRightOf="@id/addressTag"
+        android:id="@+id/address"
+        android:fontFamily="@font/ubuntufont"
+        android:textSize="12sp"
+        android:text="Lome - TOGO , Quartier Agoe Sogbossito prêt de l'ecole PATER VOLUNTAS"
+        />
+
+</RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+    <Button
+         android:id="@+id/changeprofil"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#03A9F4"
+        android:drawableRight="@drawable/ic_edit"
+        android:drawableTint="#fff"
+        android:paddingRight="30dp"
+        android:layout_marginTop="40dp"
+        android:elevation="@dimen/space5"
+        android:layout_alignParentBottom="true"
+        android:text="Modifier ces informations"
+        android:textColor="#fff"
+        />
+
+
+</RelativeLayout>

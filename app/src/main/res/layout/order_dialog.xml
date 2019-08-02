@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginTop="26dp"
+        android:background="@color/colorAccent"></View>
+    <EditText
+        android:id="@+id/edt_comment"
+        android:layout_width="match_parent"
+        android:hint="Commentaire"
+        android:padding="@dimen/space10"
+        android:fontFamily="@font/ubuntufont"
+        android:backgroundTint="@color/grey_80"
+        android:textSize="12.5dp"
+        android:layout_marginTop="@dimen/space10"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:background="@drawable/bg_ccv"
+        android:layout_height="wrap_content" />
+
+
+    <RadioGroup
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:layout_marginTop="@dimen/space10"
+        android:layout_marginBottom="@dimen/space10"
+         
+        >
+        <RadioButton
+            android:id="@+id/user_address"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:checked="true"
+             android:text="Mon adresse"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/other_address"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:text="Autre adresse"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <EditText
+        android:layout_marginTop="@dimen/space10"
+        android:id="@+id/other_address_edit"
+        android:layout_width="match_parent"
+        android:hint="Adresse "
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:background="@drawable/bg_ccv"
+        android:backgroundTint="@color/grey_80"
+        android:fontFamily="@font/ubuntufont"
+        android:textSize="12.5dp"
+        android:layout_marginBottom="@dimen/space10"
+        android:enabled="false"
+        android:padding="@dimen/space10"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

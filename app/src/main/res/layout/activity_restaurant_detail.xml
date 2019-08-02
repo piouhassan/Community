@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RestaurantDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/coloapsingtoolbar_id"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/resto_logo"
+            android:src="@color/white"
+            />
+
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/coloapsingtoolbar_id"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:paddingBottom="@dimen/space20"
+           >
+           <View
+               android:id="@+id/view2"
+               android:layout_width="match_parent"
+               android:layout_height="2dp"
+               android:background="#ccc"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/restaurant_name"
+               android:layout_marginLeft="@dimen/space20"
+
+               android:layout_marginTop="@dimen/space20"
+               android:text="Restaurant 1"
+               android:fontFamily="@font/ubuntufont"
+               android:textStyle="bold"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/restaurant_name"
+               android:id="@+id/open_title"
+               android:layout_marginTop="@dimen/space20"
+               android:layout_marginLeft="@dimen/space20"
+               android:text="Ouverture : "
+               android:fontFamily="@font/ubuntufont"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/restaurant_name"
+               android:layout_toRightOf="@id/open_title"
+               android:layout_marginTop="@dimen/space20"
+               android:layout_marginLeft="@dimen/space20"
+               android:text="7h - 22h"
+               android:fontFamily="@font/ubuntufont"
+               />
+
+           <RatingBar
+               style="@style/Widget.AppCompat.RatingBar.Small"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/resto_rating"
+               android:layout_marginTop="20dp"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="@dimen/space10"
+               android:rating="5" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/avis"
+               android:layout_below="@+id/resto_rating"
+               android:layout_marginRight="@dimen/space10"
+               android:layout_marginTop="@dimen/space20"
+               android:text="0"
+               android:fontFamily="@font/ubuntufont"
+               android:textStyle="bold"
+               android:layout_toLeftOf="@id/av"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@+id/resto_rating"
+               android:layout_alignParentRight="true"
+               android:id="@+id/av"
+               android:layout_marginRight="@dimen/space20"
+               android:layout_marginTop="@dimen/space20"
+               android:text="Commentaires"
+               android:fontFamily="@font/ubuntufont"
+               android:textStyle="bold"
+               />
+
+           <View
+               android:id="@+id/view3"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="#ccc"
+               android:layout_below="@id/av"
+               android:layout_marginLeft="@dimen/space20"
+               android:layout_marginRight="@dimen/space20"
+               android:layout_marginTop="@dimen/space20"
+               />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:layout_below="@id/view3"
+               android:id="@+id/call_restaurant"
+               android:layout_marginTop="20dp"
+               android:gravity="center"
+               android:layout_marginBottom="10dp"
+               android:layout_marginLeft="@dimen/space20"
+               android:text="Appeler"
+               android:textStyle="bold"
+               android:fontFamily="@font/ubuntufont"
+                />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:layout_below="@id/view3"
+               android:layout_marginTop="20dp"
+               android:textStyle="bold"
+               android:text="Voir Commentaires"
+               android:layout_centerHorizontal="true"
+               android:fontFamily="@font/ubuntufont"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="@dimen/space20"
+               android:gravity="center"
+               android:id="@+id/review"
+               />
+           <View
+               android:id="@+id/view4"
+               android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+               android:background="#ccc"
+               android:layout_below="@id/call_restaurant"
+               android:layout_marginLeft="@dimen/space20"
+               android:layout_marginRight="@dimen/space20"
+               android:layout_marginTop="@dimen/space20"
+               />
+
+
+
+
+
+           <TextView
+               android:id="@+id/desc"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_below="@id/view4"
+               android:layout_marginTop="@dimen/space10"
+               android:layout_marginLeft="@dimen/space20"
+               android:fontFamily="@font/ubuntufont"
+               android:text="DESCRIPTION" />
+
+           <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/resto_description"
+                 android:text="lorem ipsum dolor set"
+                 android:layout_below="@id/desc"
+               android:layout_marginLeft="@dimen/space20"
+               android:layout_marginRight="@dimen/space20"
+               android:layout_marginBottom="30dp"
+               android:textSize="13dp"
+               android:layout_marginTop="@dimen/space20"
+               android:fontFamily="@font/ubuntufont"
+                 />
+
+           <View
+               android:id="@+id/view6"
+               android:layout_width="match_parent"
+               android:layout_height="5dp"
+               android:background="#ddd"
+               android:layout_below="@id/resto_description"
+               android:layout_marginTop="@dimen/space20"
+               />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_below="@id/view6"
+                android:layout_marginTop="30dp"
+                android:text="ACCEDER AU MENU"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/colorAccent"
+                android:fontFamily="@font/ubuntufont"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:id="@+id/go_to_category"
+                />
+
+
+
+
+
+       </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end|right"
+        android:clickable="true"
+        android:tint="@android:color/white"
+        app:fabSize="normal"
+        app:rippleColor="@android:color/white"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+       android:src="@drawable/comment" />
+
+
+
+
+</RelativeLayout>

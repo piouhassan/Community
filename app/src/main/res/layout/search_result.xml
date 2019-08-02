@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    >
+    <RelativeLayout
+        android:id="@+id/seeprod"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/steak"
+            android:layout_centerVertical="true"
+             android:scaleType="centerCrop"
+            android:id="@+id/prod_im"
+            />
+
+        <TextView
+        android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/prod_nale"
+            android:fontFamily="@font/ubuntufont"
+             android:text="Steak hasher au boeuf"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+              android:text="2000"
+            android:id="@+id/search_price"
+          android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/ubuntufont"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

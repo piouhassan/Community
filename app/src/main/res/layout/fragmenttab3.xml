@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Statut de la commande"
+        android:fontFamily="@font/ubuntufont"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/space20"
+        />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/on_place"
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:layout_marginTop="@dimen/space20"
+        android:elevation="@dimen/space5"
+        app:cardCornerRadius="@dimen/space5"
+        android:background="@color/grey_80"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/grey_80"
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:src="@drawable/on_place"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consommer Sur place"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntufont"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/take_away"
+        android:layout_below="@+id/on_place"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="@dimen/space10"
+        android:layout_marginRight="@dimen/space10"
+        android:layout_marginTop="@dimen/space20"
+        android:elevation="@dimen/space5"
+        app:cardCornerRadius="@dimen/space5"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/primaryTextColor"
+            >
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:src="@drawable/take_away"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A Emporter"
+                android:layout_gravity="center"
+                android:fontFamily="@font/ubuntufont"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
+</LinearLayout>

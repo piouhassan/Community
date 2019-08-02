@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toucher pour selectionner le Reseau"
+            android:fontFamily="@font/ubuntufont"
+            android:textSize="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/space10"
+            />
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_marginBottom="@dimen/space20"
+            app:cardCornerRadius="10dp"
+
+            >
+
+            <RelativeLayout
+                android:background="#3C619B"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/operateur_reseau"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space20"
+                    android:text="TOGOCEL"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntufont"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/space20"
+                    android:layout_marginTop="@dimen/space20"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="T-MONEY"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/space10"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/ubuntufont"
+                    android:textSize="15dp"
+                    android:layout_marginTop="@dimen/space20"
+                    android:layout_marginLeft="@dimen/space10"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nouveau numero"
+                    android:layout_marginRight="@dimen/space20"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:id="@+id/new_number"
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Numero existant"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:id="@+id/exist_number"
+                    />
+
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/operateur_numero"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="135dp"
+                android:layout_marginRight="135dp"
+                android:layout_marginTop="26dp"
+                android:background="@color/colorAccent"></View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="NOUVEAU NUMERO"
+                android:textColor="@color/colorAccent"
+                android:paddingTop="@dimen/space20"
+                android:paddingBottom="@dimen/space20"
+                android:textSize="@dimen/text" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/bg_ccv"
+                android:orientation="horizontal"
+                android:padding="13dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:paddingRight="11dp"
+                    android:text="TELEPHONE"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/sub_text" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/grey_80"
+                    android:textColorHint="@color/grey_80"
+                    android:textSize="@dimen/text" />
+
+
+                <!--********you have to code at java side to detect perticular card (visa, mastercard or else)********-->
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tmoney"
+
+                    />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="Sauvegarder le numero de telephone"
+                    android:textColor="@color/grey_80"
+                    />
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1.9"
+                    android:gravity="right"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="41dp"
+                android:background="@drawable/bg_pay"
+                android:gravity="center"
+                android:layout_marginBottom="50dp"
+                android:orientation="horizontal"
+                android:padding="14dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:textColor="@color/white"
+                    android:text="CONFIRMER LE PAIMENT"
+                    android:textSize="@dimen/text" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space20"
+            android:orientation="vertical"
+            android:id="@+id/already_num"
+            >
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:text="+228 92363533"
+                    />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:text="+228 92328454"
+                    />
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="@dimen/space20"
+                android:layout_marginRight="@dimen/space20"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_marginBottom="50dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CONFIRMER LE PAIMENT"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:padding="15dp"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>
+</LinearLayout>

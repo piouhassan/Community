@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Community</string>
+    <string name="FACEBOOK_APP_ID">256989765185760</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">f515f7f74b8d482593b24413e7b41d51</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="text_hint"><b>Chercher...</b></string>
+
+    <string name="pays"><b>Lomé-TOGO</b></string>
+    <string name="construit"><b>
+        Construit par Pollen +, le dernier modèle d’application mobile de Restauration. Existe aussi en version Web.
+    </b></string>
+
+    <string name="text_sub_splash">Community of Restaurant</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="deconnexion">
+       Se deconnecter de votre compte ?
+    </string>
+
+    <string name="feedback_rating_confirmation">Your rating: %1$d out of %2$d stars"</string>
+
+    <string name="feedback_rating_value">%1$d star</string>
+
+    <string name="action_settings">Parametre</string>
+    <string name="my_cart">Mon panier</string>
+    <string name="delete">Supprimer</string>
+    <string name="pas_internet">Pas internet !</string>
+    <string name="un_probleme_avec_votre_connexion_internet">Un probleme avec votre connexion Internet</string>
+    <string name="ressayer">Ressayer</string>
+    <string name="title_activity_checkout">Validation du panier</string>
+    <string name="tab_text_1">Verification</string>
+    <string name="tab_text_2">Validation</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>
+

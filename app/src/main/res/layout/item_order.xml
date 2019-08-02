@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:background="@color/colorGrey100"
+    android:elevation="8dp"
+    app:cardCornerRadius="@dimen/space5"
+    >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:id="@+id/transaction_detail"
+         android:background="@color/white"
+         >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="137dp"
+             android:layout_marginLeft="@dimen/space10"
+             android:layout_marginRight="@dimen/space10"
+             android:orientation="vertical">
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="@dimen/space10"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:fontFamily="@font/ubuntufont"
+                         android:id="@+id/transact"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textSize="13.3sp"
+                         android:layout_centerVertical="true"
+                         android:layout_marginTop="@dimen/space10"
+                         android:text="Transaction :"/>
+                     <TextView
+                         android:fontFamily="@font/ubuntufont"
+                         android:id="@+id/transaction_number"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@id/transact"
+                         android:textSize="14.3sp"
+                         android:layout_marginLeft="@dimen/space10"
+                         android:layout_centerVertical="true"
+                         android:layout_marginTop="@dimen/space10"
+                         android:text="#15"/>
+
+                     <TextView
+                         android:fontFamily="@font/ubuntufont"
+                         android:id="@+id/transaction_coast"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textSize="12.3sp"
+                         android:padding="@dimen/space5"
+                         android:textColor="@color/white"
+                         android:background="@drawable/btn_blue_selector"
+                         android:layout_alignParentRight="true"
+                         android:layout_centerVertical="true"
+                         android:layout_marginTop="@dimen/space10"
+                         android:text="15550 Francs"/>
+                 </RelativeLayout>
+
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="@dimen/space10"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:fontFamily="@font/ubuntufont"
+                         android:id="@+id/transac"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textSize="13.3sp"
+                         android:layout_centerVertical="true"
+                         android:layout_marginTop="@dimen/space10"
+                         android:text="Statut : "/>
+                     <TextView
+                         android:fontFamily="@font/ubuntufont"
+                         android:id="@+id/transaction_statut"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@id/transac"
+                         android:textSize="11.3sp"
+                         android:layout_marginLeft="@dimen/space10"
+                         android:layout_centerVertical="true"
+                         android:layout_marginTop="@dimen/space10"
+                         android:text="Payer"/>
+
+                 </RelativeLayout>
+
+
+             </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="@dimen/space10"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal">
+
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:fontFamily="@font/ubuntufont"
+                         android:id="@+id/transa"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:textSize="13.3sp"
+                         android:layout_centerVertical="true"
+                         android:layout_marginTop="@dimen/space10"
+                         android:text="Commentaire : "/>
+                     <TextView
+                         android:fontFamily="@font/ubuntufont"
+                         android:id="@+id/transaction_comment"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_toRightOf="@id/transa"
+                         android:textSize="11.3sp"
+                         android:layout_marginLeft="@dimen/space10"
+                         android:layout_centerVertical="true"
+                         android:layout_marginTop="@dimen/space10"
+                         android:text="lorem ipsum dolor set"/>
+
+                 </RelativeLayout>
+
+
+             </LinearLayout>
+
+         </LinearLayout>
+
+
+     </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

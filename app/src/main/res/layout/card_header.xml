@@ -1,0 +1,58 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:minHeight="200dp"
+        app:cardBackgroundColor="@color/primaryTextColor"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardPreventCornerOverlap="false">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMMANDE , \n LIVRAISON"
+                android:textColor="@color/whiteBodyColor"
+                android:textSize="14sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:text="Reservations \nCommandes."
+                android:textColor="@color/whiteBodyColor"
+                android:textSize="12sp"
+                android:fontFamily="@font/opensans_regular"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:layout_centerVertical="true"
+        android:elevation="44dp"
+        android:src="@drawable/livraison"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

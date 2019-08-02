@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGrey100"
+    android:id="@+id/rootLayouter"
+    tools:context=".Activity.CartActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/bottompanel"
+        >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/top"
+       >
+       <android.support.v7.widget.Toolbar
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           android:layout_width="match_parent"
+           android:background="@color/white"
+           android:layout_height="52dp">
+
+           <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:gravity="center"
+                      android:text="Contenu du  Panier"
+                    android:layout_centerInParent="true"
+                      android:textColor="@color/colorAccent"
+                      android:textStyle="bold"
+                      android:fontFamily="@font/opensans_bold"
+                      />
+              </RelativeLayout>
+
+       </android.support.v7.widget.Toolbar>
+
+
+   </RelativeLayout>
+
+       <android.support.v4.widget.NestedScrollView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="@dimen/space10"
+           android:layout_below="@+id/top"
+         >
+          <android.support.v7.widget.RecyclerView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/cart_content"
+              >
+
+          </android.support.v7.widget.RecyclerView>
+
+
+
+
+       </android.support.v4.widget.NestedScrollView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/space20"
+            android:text="Votre Panier est vide"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/ubuntufont"
+            android:textColor="#F50057"
+            android:visibility="gone"
+            android:id="@+id/empty_cart"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottompanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/place_order"
+        android:paddingBottom="@dimen/space10"
+        android:background="@color/white"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="8.5dp"
+            android:layout_marginRight="8.5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Sub Total"
+                    android:textSize="12.7sp"
+                    android:textColor="#a2a2a2"
+                    android:fontFamily="@font/opensans_regular"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12.7sp"
+                    android:id="@+id/sub_price"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Frcs 3000"/>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2"
+                android:layout_marginLeft="8.5dp"
+                android:layout_marginRight="8.5dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping Charge"
+                    android:textSize="12.7sp"
+                    android:textColor="#a2a2a2"
+                    android:fontFamily="@font/opensans_regular"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#32CD32"
+                    android:textSize="12.7sp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Gratuit"/>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f2f2f2"
+                android:layout_marginLeft="8.5dp"
+                android:layout_marginRight="8.5dp"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textSize="12.7sp"
+                    android:textColor="#a2a2a2"
+                    android:fontFamily="@font/opensans_regular"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12.7sp"
+                    android:id="@+id/cart_total_price"
+                    android:fontFamily="@font/opensans_bold"
+                    android:text="Frcs 30000"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceder au Payement"
+        android:textSize="15sp"
+        android:id="@+id/place_order"
+        android:fontFamily="@font/opensans_regular"
+        android:textColor="@color/white"
+        android:background="#03A9F4"
+        android:gravity="center"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

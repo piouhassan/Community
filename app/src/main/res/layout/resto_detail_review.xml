@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:elevation="3dp"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/space5"
+    >
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/white"
+       >
+
+       <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+           android:layout_marginBottom="@dimen/space20"
+        android:layout_marginTop="20dp"
+         android:src="@drawable/girl"
+         android:id="@+id/comm_profil"
+       />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_toRightOf="@+id/comm_profil"
+           android:layout_marginTop="20dp"
+           android:id="@+id/comm_user"
+           android:layout_marginLeft="@dimen/space10"
+           android:textColor="#000"
+           android:text="Stephane  de Jesus"
+           android:fontFamily="@font/opensans_bold"
+           />
+
+       <RatingBar
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:layout_marginLeft="@dimen/space20"
+            android:progressTint="@color/rating_color"
+           android:progressBackgroundTint="@color/grey_80"
+           android:rating="2"
+       android:layout_alignParentRight="true"
+           android:layout_marginRight="@dimen/space20"
+           style="@style/Widget.AppCompat.RatingBar.Small"
+           android:id="@+id/comment_rating"
+
+           />
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_below="@id/comm_user"
+           android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="300dp"
+               android:layout_height="wrap_content"
+               android:layout_marginLeft="60dp"
+               android:layout_marginRight="@dimen/space10"
+               android:layout_marginTop="@dimen/space5"
+               android:textColor="@color/grey_80"
+               android:textSize="12dp"
+               android:id="@+id/commentaire"
+               android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam expedita maxime quibusdam quisquam repre vero!"
+               />
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/ic_more_vert"
+               android:layout_gravity="center"
+               />
+
+       </LinearLayout>
+
+
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/ic_more_vert"
+        android:layout_alignParentRight="true"
+           android:layout_marginTop="@dimen/space20"
+           android:tint="@color/colorAccent"
+           android:visibility="gone"
+           android:id="@+id/comment_more"
+           />
+
+   </RelativeLayout>
+
+</LinearLayout>

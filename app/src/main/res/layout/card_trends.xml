@@ -1,0 +1,32 @@
+<android.support.v7.widget.CardView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="3dp"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="left">
+
+        <ImageView
+            android:id="@+id/trendsThumbnail"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:src="@drawable/restaurant"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/transaction"
+            android:icon="@drawable/transaction"
+            android:title="Transactions" />
+        <item
+            android:id="@+id/classement"
+            android:icon="@drawable/rating"
+            android:title="Classement" />
+        <item
+            android:id="@+id/favoris"
+            android:icon="@drawable/heart"
+            android:title="Mes Favoris" />
+        <item
+            android:id="@+id/parameter"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Parametres" />
+
+    </group>
+    <item android:title="Theme">
+        <menu>
+            <item
+                android:id="@+id/nav_dark_mode"
+                android:icon="@drawable/ic_cached_black_24dp"
+                android:title="Changer  theme" />
+        </menu>
+    </item>
+    <item android:title="Autres">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Partager avec mes amis" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/poweroff"
+                android:title="Deconnexion" />
+        </menu>
+    </item>
+
+</menu>

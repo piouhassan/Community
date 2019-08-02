@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.ParameterFragment">
+<RelativeLayout
+    android:layout_marginTop="@dimen/space20"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="3dp"
+    android:background="#eee"
+    android:id="@+id/theme"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/transaction"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="@dimen/space5"
+        />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Theme"
+android:textColor="#000000"
+android:layout_marginLeft="40dp"
+android:layout_centerVertical="true"
+android:textStyle="bold"
+android:fontFamily="@font/opensans_semibold"
+/>
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/theme"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="3dp"
+    android:background="#fff"
+    android:id="@+id/setting1"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_g_translate"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="@dimen/space5"
+
+        />
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Langue"
+android:layout_marginLeft="40dp"
+android:layout_centerVertical="true"
+android:textStyle="bold"
+android:fontFamily="@font/opensans_semibold"
+/>
+    <TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Francais"
+android:layout_marginLeft="@dimen/space20"
+android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/space20"
+android:layout_centerVertical="true"
+android:textStyle="bold"
+        android:textSize="12dp"
+android:fontFamily="@font/opensans_regular"
+/>
+
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/setting1"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="3dp"
+    android:background="#eee"
+    android:id="@+id/setting2"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notifications"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="@dimen/space5"
+
+        />
+    <Switch
+        android:id="@+id/notificationswitch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:checked="true"
+        android:fontFamily="@font/opensans_semibold"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="@dimen/space20"
+        android:gravity="left"/>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/setting2"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="3dp"
+    android:background="#fff"
+    android:id="@+id/setting3"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_live_help"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="@dimen/space5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FAQ"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/setting3"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="3dp"
+    android:background="#eee"
+    android:id="@+id/setting4"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_local_phone_black_24dp"
+        android:layout_marginTop="14dp"
+        android:tint="#000000"
+        android:layout_marginLeft="@dimen/space5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nous Contacter"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/setting4"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="3dp"
+    android:background="#fff"
+    android:id="@+id/setting5"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_share"
+        android:layout_marginTop="14dp"
+        android:tint="#000000"
+        android:layout_marginLeft="@dimen/space5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inviter  un(e) ami(e)"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/setting5"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="3dp"
+    android:background="#eee"
+    android:id="@+id/setting6"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rating"
+        android:layout_marginTop="14dp"
+        android:tint="#000000"
+        android:layout_marginLeft="@dimen/space5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Noter l'application"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+<RelativeLayout
+    android:layout_below="@id/setting6"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="3dp"
+    android:background="#fff"
+    android:id="@+id/setting7"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_information"
+        android:layout_marginTop="14dp"
+        android:tint="#000000"
+        android:layout_marginLeft="@dimen/space5"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information de l'application"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>
+
+</RelativeLayout>

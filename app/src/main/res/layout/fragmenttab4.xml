@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="190dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/art_45"
+            android:tint="#3498DB"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:id="@+id/textview_regular5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="Congratulations"
+            android:textColor="#444445"
+            android:textSize="21sp" />
+
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:id="@+id/textview_regular6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Your order is Accepted"
+            android:textColor="#444445"
+            android:textSize="21sp"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview_regular5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:id="@+id/textview_regular7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:text="Order Number:"
+                android:textColor="#cf444445"
+                android:textSize="16sp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/textview_regular8"
+                app:layout_constraintTop_toBottomOf="@+id/textview_regular6" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:id="@+id/textview_regular8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#48965"
+                android:textColor="#aab0b9"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:fontFamily="@font/opensans_regular"
+            android:id="@+id/textview_regular9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Your order is being processed \nand will be shipped shortly."
+            android:textAlignment="center"
+            android:textColor="#aab0b9"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="89dp"
+            android:layout_marginRight="89dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:id="@+id/textview_regular10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="Number of items:"
+                android:textColor="#444445"
+                android:textSize="14sp" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:id="@+id/textview_regular11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#444445"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="89dp"
+            android:layout_marginRight="89dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="Total:"
+                android:textColor="#444445"
+                android:textSize="14sp" />
+
+            <TextView
+                android:fontFamily="@font/opensans_regular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="$ 500"
+                android:textColor="#444445"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        card_view:cardElevation="5dp"
+        card_view:cardCornerRadius="10dp"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        card_view:cardBackgroundColor="@color/whiteBodyColor"
+        card_view:cardPreventCornerOverlap="false"
+        android:layout_margin="@dimen/card_margin">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/productThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/filetoshare"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chawarma"
+                android:layout_below="@+id/productThumbnail"
+                android:layout_marginTop="@dimen/space10"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_marginBottom="@dimen/space10"
+                android:layout_marginLeft="@dimen/space10"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productThumbnail"
+                 android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/space10"
+                android:layout_marginTop="@dimen/space10"
+                android:src="@drawable/heart"
+                android:tint="@color/primaryTextColor"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
