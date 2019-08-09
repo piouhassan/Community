@@ -3,7 +3,7 @@ package com.pollen.community.UrlConfig;
 public class AppConfig {
 
 
-	private static String URL = "http://192.168.1.9";
+	private static String URL = "http://192.168.43.196";
 
 	// Server user login url
 	public static String URL_LOGIN = URL+"/api/login.php";

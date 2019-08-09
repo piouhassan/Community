@@ -145,7 +145,7 @@ public class AccountFragment extends Fragment {
                           }
                           else{
                               updateSqlite(uSernames,lastname,firstname,uid);
-                              updateServer(uSernames,lastname,firstname,phone,uid);
+                              updateServer(uSernames,lastname,firstname,uid,phone);
                               dialog.show();
                           }
 
